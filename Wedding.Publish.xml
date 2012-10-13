@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="https://1fdc20d1d1574c4eb4b8d7ce27ea6032.cloudapp.net:8172/MsDeploy.axd" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="Wedding_IN_0_Web" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="jamesigema - Staging" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="jgibson5" savePWD="False" userPWD="" SelectedForPublish="True" />
+  <publishProfile publishUrl="https://jamesygema.cloudapp.net:8172/MsDeploy.axd" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="Wedding_IN_0_Web" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="jamesygema - Production" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="jgibson5" savePWD="False" userPWD="" SelectedForPublish="False" />
+</publishData>
