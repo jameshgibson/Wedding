@@ -141,7 +141,7 @@
     <Content Include="Content\Images\People\CooperGillian.jpg" />
     <Content Include="Content\Images\People\CooperJohn.jpg" />
     <Content Include="Content\Images\People\CooperKim.jpg" />
-    <Content Include="Content\Images\People\CooperMeiLing.jpg" />
+    <Content Include="Content\Images\People\CooperMei Ling.jpg" />
     <Content Include="Content\Images\People\CooperPauline.jpg" />
     <Content Include="Content\Images\People\CooperSteven.jpg" />
     <Content Include="Content\Images\People\del CerroCristina.jpg" />
@@ -173,6 +173,7 @@
     <Content Include="Content\Images\People\GonzalezJose.jpg" />
     <Content Include="Content\Images\People\GonzalezMari Carmen.jpg" />
     <Content Include="Content\Images\People\GrahamTom.jpg" />
+    <Content Include="Content\Images\People\GuerraAntonio.jpg" />
     <Content Include="Content\Images\People\HartleyRose.jpg" />
     <Content Include="Content\Images\People\HarveyAndrew.jpg" />
     <Content Include="Content\Images\People\HarveyJohn.jpg" />
@@ -188,6 +189,7 @@
     <Content Include="Content\Images\People\LlacLeticia.jpg" />
     <Content Include="Content\Images\People\MaestreYobana %28Yogui%29.JPG" />
     <Content Include="Content\Images\People\MaquedaGabriel.JPG" />
+    <Content Include="Content\Images\People\MarcosIzascun.JPG" />
     <Content Include="Content\Images\People\MarshallTom.jpg" />
     <Content Include="Content\Images\People\MartinAlberto-Alf.JPG" />
     <Content Include="Content\Images\People\MartinezXany.jpg" />
@@ -218,6 +220,7 @@
     <Content Include="Content\Images\People\SerranoVanesa.jpg" />
     <Content Include="Content\Images\People\SorianoAna.JPG" />
     <Content Include="Content\Images\People\ValdesPablo.JPG" />
+    <Content Include="Content\Images\People\ValladolidAna.jpg" />
     <Content Include="Content\Images\People\VegaIvan.jpg" />
     <Content Include="Content\Images\People\WesternMatt.jpg" />
     <Content Include="Content\Images\People\WilliamsLeslie.jpg" />
