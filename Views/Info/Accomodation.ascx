@@ -26,7 +26,7 @@
             . Breakfast is buffet type and It is normally included in the price. 
         </p>
         <ul>
-            <li>Double room price: €45 approx  per room</li>
+            <li>Double room price: €75 approx  per room</li>
             <li>Address: Monasterio de Piedra Road, km 36, 50210 Nuévalos</li>
             <li>Phone reservations: +34 976849040 or +34 687 974 243</li>
             <li><a href="http://www.hotellastruchas.com/?gclid=CKvry97X8bACFSsntAodkCbacg">Website</a></li>
@@ -50,7 +50,7 @@
         <hr />
 
         <p style="font-weight: bold">
-            Note: These are the closest hotels to the Monastery. 
+            Note: These are the closest <a href="http://www.booking.com">hotels</a> to the Monastery. 
             If you prefer others, you can choose from a great variety of hotels. 
             We usually find cheaper fares through www.booking.com. 
             Remember to put in the "destination box" Nuévalos. 
@@ -79,7 +79,7 @@
         <h3>Hotel Las Truchas</h3>
         <p>Se encuentra en el monte Guru-Guru y ubicado entre el parque natural del Monasterio de Piedra y el pueblo de Nuévalos. Dispone de piscina al aire libre, jardines, restaurante y baño privado. Desayuno buffet en el restaurante del hotel (normalmente incluido en el precio).</p>
         <ul>
-            <li>Precio habitación doble: 45€ aprox/habitación</li>
+            <li>Precio habitación doble: 75€ aprox/habitación</li>
             <li>Dirección: Carretera Monasterio de Piedra, km 36, 50210 Nuévalos</li>
             <li>Teléfono reservas: 976849040 / 687974243</li>
             <li><a href="http://www.hotellastruchas.com/?gclid=CKvry97X8bACFSsntAodkCbacg">Website</a></li>
@@ -98,6 +98,6 @@
         
         <hr />
 
-        <p style="font-weight: bold">Nota: Estos son los hoteles más cercanos al Monasterio. Si queréis otros, tenéis una gran variedad de hoteles para elegir. Normalmente sale más económico reservarlo a través de www.booking.com. Recordar poner en la casilla “destino”: NUEVALOS.  Los que queráis reservar en el Monasterio de Piedra debéis hacerlo con bastante tiempo porque es el más solicitado.</p>
+        <p style="font-weight: bold">Nota: Estos son los <a href="http://www.booking.es">hoteles</a> más cercanos al Monasterio. Si queréis otros, tenéis una gran variedad de hoteles para elegir. Normalmente sale más económico reservarlo a través de www.booking.com. Recordar poner en la casilla “destino”: NUEVALOS.  Los que queráis reservar en el Monasterio de Piedra debéis hacerlo con bastante tiempo porque es el más solicitado.</p>
         <br/>
 <% } %>

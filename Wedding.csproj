@@ -200,7 +200,6 @@
     <Content Include="Content\Images\People\McDonaldRachel.jpg" />
     <Content Include="Content\Images\People\missing.png" />
     <Content Include="Content\Images\People\NaveroAna.JPG" />
-    <Content Include="Content\Images\People\Novio Cristina.jpg" />
     <Content Include="Content\Images\People\ParkerLaura.jpg" />
     <Content Include="Content\Images\People\ParkinsonSteven.jpg" />
     <Content Include="Content\Images\People\PerezCesar.jpg" />
@@ -219,6 +218,7 @@
     <Content Include="Content\Images\People\SandersKat.jpg" />
     <Content Include="Content\Images\People\SerranoVanesa.jpg" />
     <Content Include="Content\Images\People\SorianoAna.JPG" />
+    <Content Include="Content\Images\People\TutuSergio.jpg" />
     <Content Include="Content\Images\People\ValdesPablo.JPG" />
     <Content Include="Content\Images\People\ValladolidAna.jpg" />
     <Content Include="Content\Images\People\VegaIvan.jpg" />
@@ -226,6 +226,7 @@
     <Content Include="Content\Images\People\WilliamsLeslie.jpg" />
     <Content Include="Content\Images\People\WilliamsTom.jpg" />
     <Content Include="Content\Images\People\WongDerek.jpg" />
+    <Content Include="Content\Images\People\ZarzaZarza.jpg" />
     <Content Include="Content\Images\piscina.jpg" />
     <Content Include="Content\Images\restaurante.jpg" />
     <Content Include="Content\Images\ruta 2.jpg" />
