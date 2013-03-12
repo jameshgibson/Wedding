@@ -1,0 +1,240 @@
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* -- Leave rest as is --*/ 
+BODY 
+{ 
+    font-family: "Old English Text MT"; 
+    color: Black;
+    text-align:justify;
+    margin: 0; 
+    background-image: url("Images/wood.jpg");
+    /* Set rules to fill background */
+	min-height: 100%;
+	/* Set up proportionate scaling */
+	height: auto;	
+} 
+
+div#page
+{
+    width: 1100px;
+    background-image: url("Images/backgrounds.jpg");
+    margin-top: 10px;
+    min-height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+DIV#header DIV.title 
+{ 
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 110px;
+} 
+
+#language 
+{
+    float: right;
+    margin: 60px 160px 0 0;
+    font-size: 150%
+}
+
+
+DIV#header  
+{
+    height: 129px;
+}
+ 
+DIV#header DIV.title  
+{
+    color: White; 
+    font-size: 70px; 
+    padding: 4px 40px 4px 0; 
+    display: inline-block; 
+    position: relative;
+} 
+
+DIV#header DIV.title div#titleback  
+{
+    color: #911021;
+    font-size: 99%; 
+    position: absolute; 
+    left: 6px; 
+}
+
+div#header div.title span.large  
+{
+    font-size: 90px; 
+}
+
+
+DIV#content h2
+{
+    padding: 0; 
+}
+
+
+DIV#content h2:first-letter, h3:first-letter
+{
+    font-size: 40px;
+    font-family: Old English, Georgia,serif;
+    color:#911021;
+}
+
+p:first-letter 
+{
+    font-size: 30px;
+    color: #911021;
+    font-family: Old English, Georgia,serif;
+
+}
+
+DIV#content 
+{
+    font-family: Lucida Calligraphy;
+    font-size: 18px;
+    border-left: 1px groove black; 
+    padding-left: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+    color: Black;  
+} 
+
+
+DIV#categories
+{
+    padding: 10px 10px;
+    margin-left: 140px;
+} 
+ 
+DIV#categories A   
+{ 
+    display: inline-block;
+    margin: 0em 10px;
+    font-weight: bold; 
+    font-size: 28px; 
+    color: #911021;
+    text-decoration: none;
+    border-bottom: 1px Black groove;
+    border-top: 1px Black groove;
+} 
+
+DIV#categories A.selected  
+{
+    border-bottom: 2px Black solid;
+    border-top: 2px Black solid;
+} 
+
+DIV#categories A:hover  
+{
+    border-bottom: 2px Black solid;
+    border-top: 2px Black solid; 
+} 
+
+div#language a 
+{
+    color: Black;
+    text-decoration: none;
+}
+
+div#language a:active 
+{
+    text-decoration: underline;
+}
+
+div#language a:visited  
+{
+    color: #07104A;
+}
+
+img
+{
+    margin: 8px;
+    border: 2px groove black;
+}
+
+img.right
+{
+    float: right;
+}
+
+img.left
+{
+    float: left;
+}
+
+#info-menu
+{
+    
+    float: left;
+}
+
+.menu ul
+{
+    border: 2px Black solid;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu li
+{
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #911021;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.clear-both
+{
+    clear: right;
+    clear: left;
+}
+
+.title-images
+{
+    float: left;
+    margin-left: -135px;
+}
+
+#guests li {
+    list-style: none;    
+}
+
+.centre-content 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

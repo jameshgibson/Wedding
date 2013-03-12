@@ -1,0 +1,21 @@
+﻿@model Wedding.Models.PageInfo
+
+@{
+    ViewBag.Title = "Wedding";
+    Layout = "~/Views/Shared/Site.Master.cshtml";
+}
+
+@{
+    if (Model.Language == "en")
+    {
+    <p>
+        When the wedding is over we will put some of the pictures taken here.
+    </p>
+    }
+    else
+    { 
+    <p>
+        El día de la boda pondremos algunas fotos. No respondemos cómo salgáis después de las 23:00. 
+    </p>
+    }
+}

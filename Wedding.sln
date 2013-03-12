@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedding", "Wedding\Wedding.csproj", "{BC57F78F-10BB-4F92-9B8D-D5D2B8DDAB05}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Wedding.Azure", "Wedding.Azure\Wedding.Azure.ccproj", "{B3621333-02EC-48A1-BAEB-3CBCDE477B5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC57F78F-10BB-4F92-9B8D-D5D2B8DDAB05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC57F78F-10BB-4F92-9B8D-D5D2B8DDAB05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC57F78F-10BB-4F92-9B8D-D5D2B8DDAB05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC57F78F-10BB-4F92-9B8D-D5D2B8DDAB05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3621333-02EC-48A1-BAEB-3CBCDE477B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3621333-02EC-48A1-BAEB-3CBCDE477B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3621333-02EC-48A1-BAEB-3CBCDE477B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3621333-02EC-48A1-BAEB-3CBCDE477B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

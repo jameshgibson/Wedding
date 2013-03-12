@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="Wedding.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2012-10.1.8">
+  <Role name="Wedding">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=jamesygema;AccountKey=jlKD1v4KG5GMgaJA9KVTi+uw8k+JlWS4B120NJd9pvmekqPowK+zL8IniyeHQJdLZBE3vkZbY2AEmmE25JLAsQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="james" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCED53x/5iGFeJT/Wj1nME+LMwDQYJKoZIhvcNAQEBBQAEggEAWE51ICB2KIY/qAfP0p/Cj6slRrTWO1yqLTgZQmtD0k5z0xXVlLK8qWWwnTMQUovW4/CN7fHaV4lJOo/bAD02JSsw926+Fqs/E/iL7shkUIbhy8532pUQzn+U1mgK2Ms/8QSU5qVder5i6CeZv0J94ZqfoCBhrQrjH7rveI/EZEPLyabemy4mb78CpK4KYZ/M7Uw73H0ZW6hT/fDBtP8sphOAKLV997u6uqYDUqyR6O3nPRhzc3jaPTKPXHbqh5RCyeGqpE2KWuRHN9Jtmon+bmam85d7gta/cTi2XkJHcxsbYFqp+W2rCDZoHBHRf1pePeFx4X0BWylcCVrjwtf40jAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECBKNKgMlkWSpgBBGMJuEen8KyZoaDIe75YHP" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-03-11T23:59:59.0000000+00:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="6D4324C39188B6B641D12973617296B151852C59" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC57F78F-10BB-4F92-9B8D-D5D2B8DDAB05}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wedding</RootNamespace>
+    <AssemblyName>Wedding</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAzure.Storage.1.7.0.0\lib\net35-full\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\GuestController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InfoController.cs" />
+    <Compile Include="Controllers\MonestaryController.cs" />
+    <Compile Include="Controllers\NavController.cs" />
+    <Compile Include="Controllers\WeddingController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Guest.cs" />
+    <Compile Include="Models\NavLink.cs" />
+    <Compile Include="Models\PageInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\Images\andando.jpg" />
+    <Content Include="Content\Images\avion.jpg" />
+    <Content Include="Content\Images\background.jpg" />
+    <Content Include="Content\Images\background.png" />
+    <Content Include="Content\Images\backgrounds.jpg" />
+    <Content Include="Content\Images\bus.jpg" />
+    <Content Include="Content\Images\Capture.PNG" />
+    <Content Include="Content\Images\coche.jpg" />
+    <Content Include="Content\Images\Como_llegar_España.jpg" />
+    <Content Include="Content\Images\Como_llegar_Europa_0 %281%29.jpg" />
+    <Content Include="Content\Images\environment.jpg" />
+    <Content Include="Content\Images\hoteles.jpg" />
+    <Content Include="Content\Images\hotelesr.jpg" />
+    <Content Include="Content\Images\images.jpg" />
+    <Content Include="Content\Images\jamesandgema.jpg" />
+    <Content Include="Content\Images\monasterio de piedra.jpg" />
+    <Content Include="Content\Images\monasterio.jpg" />
+    <Content Include="Content\Images\parque.jpg" />
+    <Content Include="Content\Images\parque2.jpg" />
+    <Content Include="Content\Images\peluquerias.jpg" />
+    <Content Include="Content\Images\People\AguadoMario.jpg" />
+    <Content Include="Content\Images\People\AguadoNoa.JPG" />
+    <Content Include="Content\Images\People\AgueroNatalia.jpg" />
+    <Content Include="Content\Images\People\AlemanFernando.jpg" />
+    <Content Include="Content\Images\People\AlonsoMaria Jose %28Mppa%29.JPG" />
+    <Content Include="Content\Images\People\AlvarezDani.jpg" />
+    <Content Include="Content\Images\People\ArscotMike.jpg" />
+    <Content Include="Content\Images\People\AyusoRoberto Jnr. - Copy.jpg" />
+    <Content Include="Content\Images\People\AyusoRoberto Jnr.jpg" />
+    <Content Include="Content\Images\People\AyusoRoberto.jpg" />
+    <Content Include="Content\Images\People\AyusoVir.jpg" />
+    <Content Include="Content\Images\People\BakerSarah.jpg" />
+    <Content Include="Content\Images\People\BalmoriPaul.jpg" />
+    <Content Include="Content\Images\People\BassDani.jpg" />
+    <Content Include="Content\Images\People\BlackwellTim.jpg" />
+    <Content Include="Content\Images\People\BlazquezMarisol.jpg" />
+    <Content Include="Content\Images\People\BrownHannah.jpg" />
+    <Content Include="Content\Images\People\BrownLucy.jpg" />
+    <Content Include="Content\Images\People\BrownMartin.jpg" />
+    <Content Include="Content\Images\People\ByrneLouise.jpg" />
+    <Content Include="Content\Images\People\CasadoPablo Ing. Tom.jpg" />
+    <Content Include="Content\Images\People\ChapmanKen.jpg" />
+    <Content Include="Content\Images\People\CheesewrightSarah.jpg" />
+    <Content Include="Content\Images\People\CheesewrightThomas.jpg" />
+    <Content Include="Content\Images\People\CooperAliki.jpg" />
+    <Content Include="Content\Images\People\CooperEileen.jpg" />
+    <Content Include="Content\Images\People\CooperEleni.jpg" />
+    <Content Include="Content\Images\People\CooperGary.jpg" />
+    <Content Include="Content\Images\People\CooperGillian.jpg" />
+    <Content Include="Content\Images\People\CooperJanet.jpg" />
+    <Content Include="Content\Images\People\CooperJohn.jpg" />
+    <Content Include="Content\Images\People\CooperKen.jpg" />
+    <Content Include="Content\Images\People\CooperKim.jpg" />
+    <Content Include="Content\Images\People\CooperMei Ling.jpg" />
+    <Content Include="Content\Images\People\CooperPauline.jpg" />
+    <Content Include="Content\Images\People\CooperSteven.jpg" />
+    <Content Include="Content\Images\People\D%27Hondt PappijnKatrien.jpg" />
+    <Content Include="Content\Images\People\D%27Hondt PappijnNeik.jpg" />
+    <Content Include="Content\Images\People\D%27Hondt PappijnStefaan.jpg" />
+    <Content Include="Content\Images\People\del CerroCristina.jpg" />
+    <Content Include="Content\Images\People\del CerroJavi.JPG" />
+    <Content Include="Content\Images\People\del CerroJose Manuel.JPG" />
+    <Content Include="Content\Images\People\del CerroJose.jpg" />
+    <Content Include="Content\Images\People\del CerroMari mar.JPG" />
+    <Content Include="Content\Images\People\del PozoMaria del Pilar.jpg" />
+    <Content Include="Content\Images\People\DiazMarijose.jpg" />
+    <Content Include="Content\Images\People\DixonRoss.jpg" />
+    <Content Include="Content\Images\People\DufferwielScott.jpg" />
+    <Content Include="Content\Images\People\FernandezMonica.jpg" />
+    <Content Include="Content\Images\People\FernandezRaquel.jpg" />
+    <Content Include="Content\Images\People\FuegoSaul.jpg" />
+    <Content Include="Content\Images\People\GarciaBea.jpg" />
+    <Content Include="Content\Images\People\GarciaDominga.jpg" />
+    <Content Include="Content\Images\People\GarciaJorge.JPG" />
+    <Content Include="Content\Images\People\GarciaJose.jpg" />
+    <Content Include="Content\Images\People\GarciaLydia-Yiyi.jpg" />
+    <Content Include="Content\Images\People\GarciaManoli.jpg" />
+    <Content Include="Content\Images\People\GarciaSarah-Raspilla.JPG" />
+    <Content Include="Content\Images\People\GibsonAnn.JPG" />
+    <Content Include="Content\Images\People\GibsonArabela.JPG" />
+    <Content Include="Content\Images\People\GibsonBen.jpg" />
+    <Content Include="Content\Images\People\GibsonJoan.jpg" />
+    <Content Include="Content\Images\People\GibsonMargaret.JPG" />
+    <Content Include="Content\Images\People\GibsonSusan.jpg" />
+    <Content Include="Content\Images\People\GillamMark.jpg" />
+    <Content Include="Content\Images\People\GillamRuth.jpg" />
+    <Content Include="Content\Images\People\GonzalezJose.jpg" />
+    <Content Include="Content\Images\People\GonzalezMari Carmen.jpg" />
+    <Content Include="Content\Images\People\GrahamTom.jpg" />
+    <Content Include="Content\Images\People\GreenAdrian.jpg" />
+    <Content Include="Content\Images\People\GreenMari.jpg" />
+    <Content Include="Content\Images\People\GreenMartin.jpg" />
+    <Content Include="Content\Images\People\GuerraAntonio.jpg" />
+    <Content Include="Content\Images\People\HartleyRose.jpg" />
+    <Content Include="Content\Images\People\HarveyAndrew.jpg" />
+    <Content Include="Content\Images\People\HarveyJohn.jpg" />
+    <Content Include="Content\Images\People\HarveyJoy.jpg" />
+    <Content Include="Content\Images\People\HarveyRichard.jpg" />
+    <Content Include="Content\Images\People\HarveyRos.jpg" />
+    <Content Include="Content\Images\People\HarveyVal.jpg" />
+    <Content Include="Content\Images\People\HaynesAlison.jpg" />
+    <Content Include="Content\Images\People\HaynesNigel.jpg" />
+    <Content Include="Content\Images\People\HernandezAlicia.JPG" />
+    <Content Include="Content\Images\People\HerreraAlberto.JPG" />
+    <Content Include="Content\Images\People\IbanezJorge.JPG" />
+    <Content Include="Content\Images\People\IresonEmily.jpg" />
+    <Content Include="Content\Images\People\JamesBessie.jpg" />
+    <Content Include="Content\Images\People\JamesLinda.jpg" />
+    <Content Include="Content\Images\People\JamesWilliam.jpg" />
+    <Content Include="Content\Images\People\KaySue.jpg" />
+    <Content Include="Content\Images\People\LianoCristina.jpg" />
+    <Content Include="Content\Images\People\LlacLeticia.jpg" />
+    <Content Include="Content\Images\People\MaestreYobana %28Yogui%29.JPG" />
+    <Content Include="Content\Images\People\MaquedaGabriel.JPG" />
+    <Content Include="Content\Images\People\MarcosIzascun.JPG" />
+    <Content Include="Content\Images\People\MarshallTom.jpg" />
+    <Content Include="Content\Images\People\MartinAlberto-Alf.JPG" />
+    <Content Include="Content\Images\People\MartinezXany.jpg" />
+    <Content Include="Content\Images\People\MartinoXandru.JPG" />
+    <Content Include="Content\Images\People\MateosDavid.jpg" />
+    <Content Include="Content\Images\People\McDonaldGary.jpg" />
+    <Content Include="Content\Images\People\McDonaldJames.jpg" />
+    <Content Include="Content\Images\People\McDonaldRachel.jpg" />
+    <Content Include="Content\Images\People\missing.png" />
+    <Content Include="Content\Images\People\MorrowDiane.jpg" />
+    <Content Include="Content\Images\People\MorrowRod.jpg" />
+    <Content Include="Content\Images\People\NaveroAna.JPG" />
+    <Content Include="Content\Images\People\OwersMargaret.jpg" />
+    <Content Include="Content\Images\People\OwersMichael.JPG" />
+    <Content Include="Content\Images\People\ParkerLaura.jpg" />
+    <Content Include="Content\Images\People\ParkinsonSteven.jpg" />
+    <Content Include="Content\Images\People\PerezCesar.jpg" />
+    <Content Include="Content\Images\People\PorterRoss.jpg" />
+    <Content Include="Content\Images\People\QuesadaElena.jpg" />
+    <Content Include="Content\Images\People\RaneraMontse.jpg" />
+    <Content Include="Content\Images\People\RausellAna.jpg" />
+    <Content Include="Content\Images\People\RodriguezJose.jpg" />
+    <Content Include="Content\Images\People\RubioAna.JPG" />
+    <Content Include="Content\Images\People\RubioElena.jpg" />
+    <Content Include="Content\Images\People\RubioJose.jpg" />
+    <Content Include="Content\Images\People\Saenz de MieraBlanca-Pitufina.jpg" />
+    <Content Include="Content\Images\People\SandersAmy.jpg" />
+    <Content Include="Content\Images\People\SandersElizabeth.jpg" />
+    <Content Include="Content\Images\People\SandersJoe.jpg" />
+    <Content Include="Content\Images\People\SandersKat.jpg" />
+    <Content Include="Content\Images\People\SeabridgeJerry.jpg" />
+    <Content Include="Content\Images\People\sergio Tutu.jpg" />
+    <Content Include="Content\Images\People\SerranoVanesa.jpg" />
+    <Content Include="Content\Images\People\SorianoAna.JPG" />
+    <Content Include="Content\Images\People\StrongCarys.jpg" />
+    <Content Include="Content\Images\People\StrongDavid.jpg" />
+    <Content Include="Content\Images\People\ValdesPablo.JPG" />
+    <Content Include="Content\Images\People\ValladolidAna.jpg" />
+    <Content Include="Content\Images\People\VegaIvan.jpg" />
+    <Content Include="Content\Images\People\WesternMatt.jpg" />
+    <Content Include="Content\Images\People\WilliamsLeslie.jpg" />
+    <Content Include="Content\Images\People\WilliamsTom.jpg" />
+    <Content Include="Content\Images\People\WilsonwrightGeorgia.jpg" />
+    <Content Include="Content\Images\People\WongDerek.jpg" />
+    <Content Include="Content\Images\People\ZarzaZarza.jpg" />
+    <Content Include="Content\Images\piscina.jpg" />
+    <Content Include="Content\Images\restaurante.jpg" />
+    <Content Include="Content\Images\ruta 2.jpg" />
+    <Content Include="Content\Images\sack.png" />
+    <Content Include="Content\Images\TIEMPO SEMANA 8 AL 14 JULIO.GIF" />
+    <Content Include="Content\Images\TIEMPO.png" />
+    <Content Include="Content\Images\train.jpg" />
+    <Content Include="Content\Images\train2.jpg" />
+    <Content Include="Content\Images\weather.jpg" />
+    <Content Include="Content\Images\wood.jpg" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\table.css" />
+    <Content Include="Global.asax" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-outline-1.1.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\Site.Master.cshtml" />
+    <Content Include="Views\Guest\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Info\Index.cshtml" />
+    <Content Include="Views\Info\Accomodation.cshtml" />
+    <Content Include="Views\Info\Eat.cshtml" />
+    <Content Include="Views\Info\Hair.cshtml" />
+    <Content Include="Views\Info\Park.cshtml" />
+    <Content Include="Views\Info\Travel.cshtml" />
+    <Content Include="Views\Info\Weather.cshtml" />
+    <Content Include="Views\Monestary\Index.cshtml" />
+    <Content Include="Views\Nav\Menu.cshtml" />
+    <Content Include="Views\Wedding\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\vips.csv" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53425/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
