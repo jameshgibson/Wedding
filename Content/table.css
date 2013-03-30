@@ -1,0 +1,24 @@
+﻿table
+{
+    float: right;
+    text-align: right;
+    border-collapse: collapse;
+    margin: 20px -20px 20px 20px;
+}
+
+table, tr, td, th
+{
+    border: 1px solid Brown;
+}
+
+
+table th
+{
+    font-size: 16;
+    padding: 6px;   
+}
+
+table td
+{
+    padding: 5px 10px;
+}
