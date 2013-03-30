@@ -14,7 +14,11 @@ namespace Wedding.Controllers
 
         public ActionResult Index(string selected, string lang)
         {
-            var pi = new PageInfo(selected, lang);
+            PageInfo pi;
+            if (lang == null)
+                pi = new PageInfo();
+            else
+                pi = new PageInfo(selected, lang);
             return View(pi);
         }
 
